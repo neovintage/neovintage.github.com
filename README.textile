@@ -1,0 +1,7 @@
+h1. This is the code for IdeaCrate's main site.
+
+You can check it out at http://goideacrate.com
+
+h1. License
+
+Feel free to use any of the html or css here but if you want to use any of the images in the images/ directory you need to get permission before doing so.  
