@@ -1,0 +1,13 @@
+#slogan {
+  width: 960px;
+}
+
+#slogan h1 {
+  width: 100%;
+  display: inline;
+}
+
+.sec {
+  margin-top: 5px;
+  width: 960px;
+}

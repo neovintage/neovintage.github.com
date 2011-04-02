@@ -1,0 +1,257 @@
+/*
+ *
+ * colors:
+ *  background #dadada
+ *
+ */
+body {
+  background: #dadada url(images/bg.jpg) repeat-x;
+  text-align: center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 20px;
+  font-size: 13px;
+}
+
+.lfont {
+  font-family: 'Lekton', arial;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+#container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/*
+ * HEADER
+ */
+#header {
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+#header img {
+  float: left;
+}
+
+#header ul#nav {
+  overflow: hidden;
+  float: right;
+  height: 84px;
+  margin: 0;
+  margin-top: -13px;
+}
+
+#nav li {
+  float: left;
+  font-size: 18px;
+  text-align: center;
+  width: 112px;
+  height: 84px;
+  margin-right: 20px;
+  list-style-type: none;
+}
+
+#nav li a {
+  height: 84px;
+  display: block;
+  padding-top: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-left: 10px;
+  padding-bottom: 4px;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #554e44;
+  font-weight: bold;
+}
+
+#nav li a:hover {
+  /*background: url(images/underline.jpg) repeat-x 100% 100%;*/
+  color: #8904af;
+}
+
+#nav li a:visted {
+  color: #554e44;
+}
+
+/*
+ * SLOGAN
+ */
+#slogan {
+  height: 410px;
+  text-align: center;
+  line-height: 410px;
+}
+
+#slogan h1 {
+  font-size: 28px;
+}
+
+#slogan span {
+  color: #8904af;
+  font-family: georgia, courier new, courier, serif;
+  font-style: italic;
+}
+
+/*
+ * SECTION
+ */
+.sec {
+  border-top: 2px dotted #999999;
+  padding: 55px 0;
+}
+
+.s_title {
+  display: inline;
+  float: left;
+  position: relative;
+  margin-right: 10px;
+  width: 140px;
+  color: #8904af;
+  font-size: 24px;
+  margin-left: 10px
+}
+
+.s_title h2 {
+  text-align: left;
+  font-weight: normal;
+}
+
+.s_content {
+  margin-left: 10px;
+  float: left;
+  position: relative;
+  width: 780px;
+}
+
+/*
+ * SERVICES THUMBNAILS
+ */
+.thumbnail {
+  width: 360px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+  float: left;
+  position: relative;
+  text-align: left;
+}
+
+.thumbnail h3 {
+  height: 75px;
+  line-height: 75px;
+  padding-left: 100px;
+  padding-bottom: 20px;
+  border-bottom: 1px dotted #999999;
+  font-family: lekton;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+#c_title {
+  background: url(images/consulting.png) no-repeat;
+}
+
+#d_title {
+  background: url(images/development.png) no-repeat;
+}
+
+#dsg_title {
+  background: url(images/design.png) no-repeat;
+}
+
+#in_title {
+  background: url(images/innovation2.png) no-repeat;
+}
+
+.thumbnail p {
+  text-align: justify;
+  padding-top: 10px;
+}
+
+.left {
+  margin-right: 20px;
+}
+
+.right {
+  margin-left: 20px;
+}
+
+
+/*
+ * ABOUT US SECTION
+ */
+
+#company_about {
+  text-align: justify;
+  margin: 0 10px;
+  padding-bottom: 50px;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+#team_about h4 {
+  font-size: 20px;
+  line-height: 17px;
+  float: left;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.member {
+  margin-left: 10px;
+  float: left;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.photo {
+  width: 260px;
+  float: left;
+}
+
+.bio {
+  width: 500px;
+  float: right;
+  padding-top: 20px;
+  padding-left: 10px;
+  text-align: justify;
+}
+
+
+/*
+ * CONTACT
+ */
+.c_left {
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 220px;
+  float: left;
+  text-align: left;
+}
+
+.c_left p {
+  text-align: justify;
+  padding-top: 10px;
+}
+
+.c_right {
+  margin-left: 10px;
+  margin-right: 10px;
+  float: left
+  width: 600px
+}

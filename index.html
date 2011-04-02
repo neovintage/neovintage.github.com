@@ -1,0 +1,173 @@
+<html>
+  <head>
+    <link href="http://fonts.googleapis.com/css?family=Lekton:400,italic,700" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="jquery.tweet.css" />
+    <!--[if IE]>
+      <link rel="stylesheet" type="text/css" href="ie.css" />
+    <![endif]-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"> </script>
+    <script type="text/javascript" src="jquery.tweet.js"> </script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".scroll").click(function(event) {
+          event.preventDefault();
+          var full_url = this.href;
+          var parts = full_url.split("#");
+          var trgt = parts[1];
+          var target_offset = $("#"+trgt).offset();
+          var target_top = target_offset.top;
+
+          $('html,body').animate({scrollTop:target_top}, 'slow');
+        });
+      });
+        $(document).ready(function(){
+            $(".tweet").tweet({
+                join_text: "auto",
+                avatar_size: 128,
+                count: 1,
+                username: ["ideacrate"],
+                loading_text: "loading tweets...",
+                template: function(i){ return i["text"] }
+            });
+        });
+      </script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22476108-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </head>
+  <body>
+    <div id="container">
+  <!--[if lt IE 7]>
+  <div style='border: 1px solid #F7941D; background: #FEEFDA; text-align: center; clear: both; height: 75px; position: relative;'>
+    <div style='position: absolute; right: 3px; top: 3px; font-family: courier new; font-weight: bold;'><a href='#' onclick='javascript:this.parentNode.parentNode.style.display="none"; return false;'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-cornerx.jpg' style='border: none;' alt='Close this notice'/></a></div>
+    <div style='width: 640px; margin: 0 auto; text-align: left; padding: 0; overflow: hidden; color: black;'>
+      <div style='width: 75px; float: left;'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-warning.jpg' alt='Warning!'/></div>
+      <div style='width: 275px; float: left; font-family: Arial, sans-serif;'>
+        <div style='font-size: 14px; font-weight: bold; margin-top: 12px;'>You are using an outdated browser</div>
+        <div style='font-size: 12px; margin-top: 6px; line-height: 12px;'>For a better experience using this site, please upgrade to a modern web browser.</div>
+      </div>
+      <div style='width: 75px; float: left;'><a href='http://www.firefox.com' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-firefox.jpg' style='border: none;' alt='Get Firefox 3.5'/></a></div>
+      <div style='width: 75px; float: left;'><a href='http://www.browserforthebetter.com/download.html' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-ie8.jpg' style='border: none;' alt='Get Internet Explorer 8'/></a></div>
+      <div style='width: 73px; float: left;'><a href='http://www.apple.com/safari/download/' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-safari.jpg' style='border: none;' alt='Get Safari 4'/></a></div>
+      <div style='float: left;'><a href='http://www.google.com/chrome' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-chrome.jpg' style='border: none;' alt='Get Google Chrome'/></a></div>
+    </div>
+  </div>
+  <![endif]-->      
+      <div id="header">
+        <img src="images/logo.png" alt="ideaCrate" />
+        <ul id="nav" class="lfont">
+          <li id="li_services"><a href="#services" class="scroll">SERVICES</a></li>
+          <li id="li_about"><a href="#about" class="scroll">ABOUT</a></li>
+          <li id="li_news"><a href="#news" class="scroll">NEWS</a></li>
+          <li id="li_contacts"><a href="#contact" class="scroll">CONTACTS</a></li>
+        </ul>
+      </div>
+      <div id="slogan">
+        <h1 class="lfont"><span>Out-of-the-box Solutions</span> for Outside the Box Problems</h1>
+      </div>
+      <div id="main">
+        <div id="services" class="sec">
+          <div class="s_title lfont">
+            <a name="#services" class="scroll"></a><h2>Services_</h2>
+          </div>
+          <div class="s_content">
+            <div class="thumbnail left one">
+              <h3 id="c_title">Consulting</h3>
+              <p>We approach consulting like a partnership; Whether you are looking for help crafting your business plan, conducting market research, or kick-starting a more effective branding and business development strategy, our team is equipped to provide you with the best business case and solution to help you grow to new heights.</p>
+            </div>
+            <div class="thumbnail right two">
+              <h3 id="d_title">Development</h3>
+              <p>Do you need help making technology a more effective tool for your organization? Whether you need a website, online shopping portal, interactive media products, mobile applications, or help solidifying your own IT infrastructure, IdeaCrate can help you bridge the gap between technology and opportunity.</p>
+            </div>
+            <div class="clear"> </div>
+            <div class="thumbnail left three">
+              <h3 id="dsg_title">Design</h3>
+              <p>It's ok if you slept through art class.... we didn't. Our team focuses on working with you to deliver innovative design solutions that fully incorporate your business goals and objectives. Whether you are looking to re-fresh your current brand, build collateral or presentation templates, or improve your online presence through custom social media and web design pieces, IdeaCrate is ready to show you how to leverage design to achieve operational success.</p>
+            </div>
+            <div class="thumbnail right four">
+              <h3 id="in_title">Innovation</h3>
+              <p>Our team's endless appetite for curiosity, coupled with a culture of creativity has produced a number of internally driven projects and applications, which lay testament to our commitment to constant innovation. We thrive in situations where we can identify unique business problems and, either on our own or with a partner, build newer and better "out-of-the-box solutions for outside of the box problems.</p>
+            </div>
+          </div>
+          <div class="clear"> </div>
+        </div>
+        <div id="about" class="sec">
+          <div class="s_title lfont">
+             <a name="#about" class="scroll"></a><h2>About_</h2>
+          </div>
+          <div class="s_content">
+            <div id="company_about">
+              <p>&quotIn 2011, a crack team of business commandos re-evaluated how they would carve out their niche in the newest generation of entrepreneurs. These men promptly escaped from their maximum security corporate stockades to the Chicago start-up community.  Today, still being sought after by corporate big shots, they survive as entrepreneurs of fortune. If you have a business problem, if no one else can help, you should hire the IdeaCrate Team.&quot;</p>
+            </div>
+            <div id="team_about">
+              <h4 class="lfont">Meet the Team</h4>
+              <div class="clear"> </div>
+              <div class="member">
+                <div class="photo">
+                  <img src="images/jc1.jpg" alt="JC Garrett" />
+                </div>
+                <div class="bio">
+                  <p>JC heads-up the majority of IdeaCrate's business consulting projects; and has worked with a number of ventures in a consulting capacity - primarily in the areas of strategic planning, marketing, branding and business development.  Prior to helping launch IdeaCrate, JC worked for a software services company where he lead teams charged with marketing, selling and distributing innovative technology solutions to organizations and businesses around the country.  He holds an MBA from Pepperdine University in marketing & entrepreneurial management.</p>
+                </div>
+              </div>
+              <div class="member">
+                <div class="photo">
+                  <img src="images/rimas.jpg" alt="Rimas Silkaitis" />
+                </div>
+                <div class="bio">
+                  <p>Rimas writes all of the software and handles strategy for IdeaCrate. His passions lie with creating great products that are well designed.  Well versed in a number of programming languages, Rimas drives technology solutions that are as innovative as they are scalable.  His aptitude for busines business strategy, coupled with his technical prowess, allows our clients to take full advantage of great technology products with a game plan to leverage these tools towards operational success.</p>
+                </div>
+              </div>
+              <div class="member">
+                <div class="photo">
+                  <img src="images/matt.jpg" alt="Matt Parris" />
+                </div>
+                <div class="bio">
+                  <p>Matt is IdeaCrate's primary point-person and thought leader with all things graphic design. He holds a BFA in graphic design from Ohio University. Matt has worked as freelance designer for non-profits, interned at NBBJ Design and worked as an in-house designer for a startup software development company.  His experience is in interactive design, brand and social media implementation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clear"> </div>
+        </div>
+        <div id="news" class="sec">
+          <div class="s_title lfont">
+            <a name="#news" class="scroll"></a> <h2>News_</h2>
+          </div>
+          <div class="s_content tweet">
+            <p></p>
+          </div>
+          <div class="clear"> </div>
+        </div>
+        <div id="contact" class="sec">
+          <div class="s_title lfont">
+             <a name="#contact" class="scroll"></a><h2>Contact_</h2>
+          </div>
+          <div class="s_content">
+            <div class="c_left">
+              <h5>IdeaCrate<br>A Chicago-based Company</h5>
+              <p>PHONE<br>847-977-6155</p>
+              <p>EMAIL<br>jc@goideacrate.com</p>
+            </div>
+            <div class="c_right">
+              <img src="images/chicago.jpg" />
+            </div>
+          </div>
+          <div class="clear"> </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
